@@ -1057,9 +1057,10 @@ footer {
     }
 } */
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
     body {
         padding: 10px;
+        max-width: 700px;
     }
 
     .logo-search {
@@ -1131,7 +1132,16 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
-    
+    .featured-view-all{
+        text-align: center;
+        position: relative;
+        left: 40px;
+    }
+    .view-all{
+        text-align: center;
+        position: relative;
+        left: 40px;
+    }
     .about-section {
         flex-direction: column;
         align-items: center;
@@ -1146,6 +1156,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 10px 10px;
     }
     
     .blog-container {
@@ -1162,7 +1173,13 @@ footer {
         text-align: center;
         padding: 20px;
     }
-    
+    .elixir-images img{
+        width: 150px;
+    }
+    .shop-now{
+        position: relative;
+        left: 20px;
+    }
     footer {
         padding: 20px;
     }
