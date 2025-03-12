@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joom Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Montserrat from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="splide-4.1.3/splide-4.1.3/dist/css/splide.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            Free Shipping / Free Product after shopping for Rs.1100 🎉
+        </div>
+        <div class="logo-search">
+            <img src="images/logo.svg" alt="Joon Beauty Logo" class="logo">
+            <div class="search-bar">
+                <p>What are you looking for?</p>
+                <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            </div>
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-solid fa-bag-shopping cart-count" count="2"></i>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+    </header>
+    <hr class="hrline1">
+    <!-- Navigation -->
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        <ul id="nav-menu">
+            <li><select name="Dropdown" id="dropdown" title="dropdown">
+                New-Arrival
+                <option value="New-Arrival">New-Arrival</option>
+                <option value="New-Arrival">New-Arrival</option>
+                <option value="New-Arrival">New-Arrival</option>
+                <option value="New-Arrival">New-Arrival</option>
+                </select></li>
+            <li><select name="Dropdown" id="dropdown-eyes" title="dropdown">
+                Eyes
+                <option value="New-Arrival">Eyes</option>
+                <option value="New-Arrival">Eyes</option>
+                <option value="New-Arrival">Eyes</option>
+                <option value="New-Arrival">Eyes</option>
+                </select></li></a></li>
+            <li><a href="#">Lips</a></li>
+            <li><a href="#">Combos</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">Blogs/Tutorials</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Images Carousel -->
+     <section class="splide" aria-label="Basic Structure Example" id="slider1">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img src="images/Banner-01.jpg" alt="Banner-01" class="hero-image-carousel"></li>
+            <li class="splide__slide"><img src="images/Banner-02.jpg" alt="Banner-02" class="hero-image-carousel"></li>
+            <li class="splide__slide"><img src="images/Banner-03.jpg" alt="Banner-03" class="hero-image-carousel"></li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- Products Section -->
+    <section class="collections">
+        <h4 style="text-align: center;font-weight: 600;opacity: 0.7;" class="collections-heading">PRODUCTS</h4>
+        <h2 class="title">Special Collections Library</h2>
+        <div class="products">
+            <div class="product-card eyes">
+                <div class="product-card-left-box">
+                    <h4 style="text-align: left;">Eyes</h4>
+                    <p style="text-align: left;margin-bottom: 8px;">Overnight</p>
+                    <p style="margin-bottom: 8px;text-align: left;">Sleeping Cream</p>
+                    <p style="text-align: left;margin-bottom: 8px;">- 1.7 fl oz</p>
+                    <button>BUY NOW</button>
+                </div>
+                <img src="images/below-banner-product1.png" alt="Lancome">
+            </div>
+            <div class="product-card lips">
+                <div class="product-card-left-box">
+                    <h4 style="text-align: left;">Lips</h4>
+                    <p style="text-align: left;margin-bottom: 8px;">Overnight</p>
+                    <p style="margin-bottom: 8px;text-align: left;">Sleeping Cream</p>
+                    <p style="text-align: left;">- 1.7 fl oz</p>
+                    <button>BUY NOW</button>
+                </div>
+                <img src="images/below-banner-product2.png" alt="Lips Product">
+            </div>
+            <div class="product-card combos">
+                <div class="product-card-left-box">
+                    <h4 style="text-align: left;">Combos</h4>
+                    <p style="text-align: left;margin-bottom: 8px;">Overnight</p>
+                    <p style="margin-bottom: 8px;text-align: left;">Sleeping Cream</p>
+                    <p style="text-align: left;">- 1.7 fl oz</p>
+                    <button>BUY NOW</button>
+                </div>
+                <img src="images/below-banner-product-3.png" alt="Glossier">
+            </div>
+            <div class="product-card best-seller">
+                <div class="product-card-left-box">
+                    <h4 style="text-align: left;">Best Seller</h4>
+                    <p style="text-align: left;margin-bottom: 8px;">Overnight</p>
+                    <p style="text-align: left;margin-bottom: 8px;">Sleeping Cream</p>
+                    <p style="text-align: left;">- 1.7 fl oz</p>
+                    <button>BUY NOW</button>
+                </div>
+                <img src="images/below-banner-product-4.png" alt="Sugar Product">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <h3 style="font-weight: 600;">PRODUCTS</h3>
+        <h1 style="font-weight: 500;">Here’s why you can trust we’re the real deal.</h1>
+        <div class="features">
+            <div class="feature">
+                <img src="images/cruelty-free.png" alt="cruelty-free">
+                <p>Cruelty Free</p>
+            </div>
+            <div class="feature">
+                <img src="images/paraben-free.png" alt="paraben-free">
+                <p>Paraben Free</p>
+            </div>
+            <div class="feature">
+                <img src="images/sulphate-free.png" alt="sulphate-free">
+                <p>Sulphate Free</p>
+            </div>
+            <div class="feature">
+                <img src="images/vegan.png" alt="vegan">
+                <p>Vegan</p>
+            </div>
+        </div>
+
+        <p class="trust-section-description" style="margin: 0;">
+            At Juicy Chemistry, we absolutely love being upfront about what we are, and what we aren’t.
+        </p>
+        <p class="trust-section-description" style="margin: 0;">Why Juicy Chemistry? Click 'KNOW MORE' for the answers.</p>
+        <button class="know-more">KNOW MORE</button>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured-shop-section">
+        <h3 class="featured-subtitle">OUR SHOP</h3>
+        <h1 class="featured-title">Feature Collection</h1>
+
+        <section class="splide" aria-label="Basic Structure Example" id="slider2">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="featured-product-card featured-light-green">
+                    <div class="featured-product-card-light-green">
+                        <span class="featured-wishlist"><i class="far fa-heart"></i></span>
+                        <img src="images/FC_product1.png" alt="Product 1" class="featured-product-img">
+                    </div>
+                    <h2 class="featured-product-name">Bulgarian Damask <br>Rose Hydrosol</h2>
+                    <p class="featured-product-desc">For Brighter Skin</p>
+                    <div class="featured-rating">★★★★★ <span>1481 reviews</span></div>
+                    <div class="featured-price-cart">
+                        <button class="featured-cart-btn">₹ 1,050   ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="featured-product-card featured-light-pink">
+                    <div class="featured-product-card-light-pink">
+                        <span class="featured-wishlist"><i class="far fa-heart"></i></span>
+                        <img src="images/FC_product2.png" alt="Product 2" class="featured-product-img">
+                    </div>
+                    <h2 class="featured-product-name">Bulgarian Damask <br>Rose Hydrosol</h2>
+                    <p class="featured-product-desc">For Brighter Skin</p>
+                    <div class="featured-rating">★★★★★ <span>1481 reviews</span></div>
+                    <div class="featured-price-cart">
+                        <button class="featured-cart-btn">₹ 1,050   ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="featured-product-card featured-light-blue">
+                    <div class="featured-product-card-light-blue">
+                        <span class="featured-wishlist"><i class="far fa-heart"></i></span>
+                        <img src="images/FC_product3.png" alt="Product 3" class="featured-product-img">
+                    </div>
+                    <h2 class="featured-product-name">Bulgarian Damask <br>Rose Hydrosol</h2>
+                    <p class="featured-product-desc">For Brighter Skin</p>
+                    <div class="featured-rating">★★★★★ <span>1481 reviews</span></div>
+                    <div class="featured-price-cart">
+                        <button class="featured-cart-btn">₹ 1,050   ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="featured-product-card featured-light-green">
+                    <div class="featured-product-card-light-green">
+                        <span class="featured-wishlist"><i class="far fa-heart"></i></span>
+                        <img src="images/FC_product1.png" alt="Product 1" class="featured-product-img">
+                    </div>
+                    <h2 class="featured-product-name">Bulgarian Damask <br>Rose Hydrosol</h2>
+                    <p class="featured-product-desc">For Brighter Skin</p>
+                    <div class="featured-rating">★★★★★ <span>1481 reviews</span></div>
+                    <div class="featured-price-cart">
+                        <button class="featured-cart-btn">₹ 1,050   ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="featured-product-card featured-light-pink">
+                    <div class="featured-product-card-light-pink">
+                        <span class="featured-wishlist"><i class="far fa-heart"></i></span>
+                        <img src="images/FC_product2.png" alt="Product 2" class="featured-product-img">
+                    </div>
+                    <h2 class="featured-product-name">Bulgarian Damask <br>Rose Hydrosol</h2>
+                    <p class="featured-product-desc">For Brighter Skin</p>
+                    <div class="featured-rating">★★★★★ <span>1481 reviews</span></div>
+                    <div class="featured-price-cart">
+                        <button class="featured-cart-btn">₹ 1,050   ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="featured-product-card featured-light-blue">
+                    <div class="featured-product-card-light-blue">
+                        <span class="featured-wishlist"><i class="far fa-heart"></i></span>
+                        <img src="images/FC_product3.png" alt="Product 3" class="featured-product-img">
+                    </div>
+                    <h2 class="featured-product-name">Bulgarian Damask <br>Rose Hydrosol</h2>
+                    <p class="featured-product-desc">For Brighter Skin</p>
+                    <div class="featured-rating">★★★★★ <span>1481 reviews</span></div>
+                    <div class="featured-price-cart">
+                        <button class="featured-cart-btn">₹ 1,050   ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    </div>
+                </div></li>
+              </ul>
+            </div>
+        </section>
+        <button class="featured-view-all">VIEW ALL PRODUCTS</button>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h3 class="about-subtitle">ABOUT US</h3>
+            <h1 class="about-title">Joon Cosmetics</h1>
+            <h2 class="about-tagline">Naturally Potent, Naturally Activated</h2>
+            <p class="about-description">
+                Ecocert Certified Natural Serums that deliver hydrophilic phyto-actives 
+                and micronutrients in their most bioavailable, active, and stable form.
+            </p>
+            <p class="about-description">
+                Ecocert Certified Natural Serums that deliver hydrophilic phyto-actives 
+                and micronutrients in their most bioavailable, active, and stable form.
+            </p>
+            <button class="about-button">READ MORE</button>
+        </div>
+    
+        <div class="about-image">
+            <img src="images/Aboutus_right.png" alt="Team Image">
+        </div>
+    </section>
+
+    <!-- Top Seller -->
+    <section class="topseller">
+        <section class="splide" aria-label="Carousel 2" id="slider3">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <img src="images/right-arrow.png" alt="left-arrow" id="button-left">
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <img src="images/right-arrow.png" alt="right-arrow" id="button-right">
+                </button>
+           </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><div class="top-seller">
+                    <div class="content">
+                        <h3 class="tagline">BEST/TOP SELLER</h3>
+                        <h1 class="product-name">Soft Matt Lipstick</h1>
+                        <div class="rating">
+                            <span>★ ★ ★ ★ ☆ 1481 reviews</span>
+                            <span class="social-share">
+                                Share <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i>
+                            </span>
+                        </div>
+                        <p class="description">
+                            This organic and moisturizing lip butter <br>
+                            intensely nourishes the skin. Its vitamin C rich oils
+                        </p>
+                
+                        <p class="shade-label">Shades  :- Heartbreaker ( Crimson Red )</p>
+                        <div class="shade-options">
+                            <span class="shade" style="background-color: #E39B84;"></span>
+                            <span class="shade" style="background-color: #723B26;"></span>
+                            <span class="shade" style="background-color: #E54277;"></span>
+                            <span class="shade" style="background-color: #D80000;"></span>
+                        </div>
+                        <div class="price">
+                            <span class="discounted-price">Price₹995 |</span>
+                            <span class="original-price">₹1150</span>
+                        </div>
+                
+                        <div class="buttons">
+                            <button class="buy-now">BUY NOW</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="top-seller">
+                    <div class="content">
+                        <h3 class="tagline">BEST/TOP SELLER</h3>
+                        <h1 class="product-name">Soft Matt Lipstick</h1>
+                        <div class="rating">
+                            <span>★ ★ ★ ★ ☆ 1481 reviews</span>
+                            <span class="social-share">
+                                Share <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i>
+                            </span>
+                        </div>
+                        <p class="description">
+                            This organic and moisturizing lip butter <br>
+                            intensely nourishes the skin. Its vitamin C rich oils
+                        </p>
+                
+                        <p class="shade-label">Shades  :- Heartbreaker ( Crimson Red )</p>
+                        <div class="shade-options">
+                            <span class="shade" style="background-color: #E39B84;"></span>
+                            <span class="shade" style="background-color: #723B26;"></span>
+                            <span class="shade" style="background-color: #E54277;"></span>
+                            <span class="shade" style="background-color: #D80000;"></span>
+                        </div>
+                        <div class="price">
+                            <span class="discounted-price">Price₹995 |</span>
+                            <span class="original-price">₹1150</span>
+                        </div>
+                
+                        <div class="buttons">
+                            <button class="buy-now">BUY NOW</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="splide__slide"><div class="top-seller">
+                    <div class="content">
+                        <h3 class="tagline">BEST/TOP SELLER</h3>
+                        <h1 class="product-name">Soft Matt Lipstick</h1>
+                        <div class="rating">
+                            <span>★ ★ ★ ★ ☆ 1481 reviews</span>
+                            <span class="social-share">
+                                Share <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i>
+                            </span>
+                        </div>
+                        <p class="description">
+                            This organic and moisturizing lip butter <br>
+                            intensely nourishes the skin. Its vitamin C rich oils
+                        </p>
+                
+                        <p class="shade-label">Shades  :- Heartbreaker ( Crimson Red )</p>
+                        <div class="shade-options">
+                            <span class="shade" style="background-color: #E39B84;"></span>
+                            <span class="shade" style="background-color: #723B26;"></span>
+                            <span class="shade" style="background-color: #E54277;"></span>
+                            <span class="shade" style="background-color: #D80000;"></span>
+                        </div>
+                        <div class="price">
+                            <span class="discounted-price">Price₹995 |</span>
+                            <span class="original-price">₹1150</span>
+                        </div>
+                
+                        <div class="buttons">
+                            <button class="buy-now">BUY NOW</button>
+                            <button class="add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div></li>
+              </ul>
+            </div>
+          </section>
+        
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h4 class="blog-tag">BLOGS</h4>
+        <h2 class="blog-title">
+            From skincare myths to must-have ingredients, <br>
+            we break it all down on the blog.
+        </h2>
+    
+        <div class="blog-container">
+            <div class="blog-card">
+                <img src="images/blog-1.jpg" alt="Wintergreen Oil">
+                <p class="date">January 25, 2022</p>
+                <h3>Pain Relieving Benefits of Wintergreen Oil</h3>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog-2.jpg" alt="Olive for Skin">
+                <p class="date">January 25, 2022</p>
+                <h3>Say ‘Olive You Very Much’ to Your Skin!</h3>
+            </div>
+            <div class="blog-card">
+                <img src="images/blog-3.jpg" alt="Ashwagandha for Hair">
+                <p class="date">January 18, 2022</p>
+                <h3>Amazing Benefits of Ashwagandha for Hair</h3>
+            </div>
+        </div>
+        <button class="view-all">VIEW ALL ARTICLES</button>
+    </section>
+
+    <!-- Elixir Section -->
+    <section class="elixir-section">
+        <div class="elixir-images">
+            <img src="images/shop_products.png" alt="shop_products">
+        </div>
+        <div class="elixir-content">
+            <h2>NOURISHING FACE ELIXIRS</h2>
+            <p>Clinically tested Face Oils for Skin Brightening, Dark Circle Reduction & Skin Texture Improvement.</p>
+            <button class="shop-now">SHOP NOW</button>
+        </div>
+    </section>
+
+     <!-- Feature You Section -->
+    <section>
+        <div class="feature-you">
+            <h2>Let's Feature You</h2>
+            <p>Make way for Gen Why</p>
+            <section class="splide" aria-label="slider4" id="slider4">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/footer-1.jpg" alt="Product 1" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-2.jpg" alt="Product 2" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-3.jpg" alt="Product 3" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-4.jpg" alt="Product 4" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-2.jpg" alt="Product 6" class="image-grid-image"></li>
+                  </ul>
+                </div>
+            </section>
+            <section class="splide" aria-label="slider5" id="slider5">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/footer-2.jpg" alt="Product 1" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-3.jpg" alt="Product 2" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-4.jpg" alt="Product 3" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-1.jpg" alt="Product 4" class="image-grid-image"></li>
+                    <li class="splide__slide"><img src="images/footer-2.jpg" alt="Product 5" class="image-grid-image"></li>
+                  </ul>
+                </div>
+            </section>
+        </div>
+     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="images/logo.svg" alt="Joon Beauty Logo" class="footer-logo">
+                <p class="acknowledgement">
+                    Joon Beauty wishes to acknowledge the Traditional Custodians of the land on which we work and gather, both at our Support Centre in Naarm and our stores across this nation. 
+                    We pay respect to Elders - past, present and emerging - and recognize their ongoing connection to this beautiful country, with knowledge and stories that have been handed down since time immemorial.
+                </p>
+            </div>
+            <div class="social-icons">
+                <span>Get social with us</span>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <hr class="hrline-footer">
+            </div>    
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-links">
+                <div class="quick-help">
+                    <h4>Quick Help</h4>
+                    <ul>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Refund & Return policy</a></li>
+                        <li><a href="#">Terms & services</a></li>
+                    </ul>
+                </div>
+                <div class="get-to-know">
+                    <h4>Get To Know Us</h4>
+                    <ul>
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Eyes</a></li>
+                        <li><a href="#">Lips</a></li>
+                        <li><a href="#">Combos Offers</a></li>
+                        <li><a href="#">Blogs/Tutorials</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>Sign up for our newsletter!</h2>
+                <p>Enter your email below to be the first to know about</p>
+                <p>news collection and product launches</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 Joon Beauty. All rights reserved. Designed by Ideamagix.</p>
+            <p>Made in India</p>
+            <div class="payment-methods">
+                <img src="images/mastercard-logo-512x512.png" alt="Amex">
+                <img src="images/visa.png" alt="PayPal">
+                <img src="images/Google_Pay_GPay_Logo-512.webp" alt="Google Pay">
+                <img src="images/amex.jpg" alt="Visa">
+                <img src="images/paypal.webp" alt="Mastercard">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="splide-4.1.3/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
